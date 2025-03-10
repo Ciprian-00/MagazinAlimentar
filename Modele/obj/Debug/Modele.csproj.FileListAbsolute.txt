@@ -1,0 +1,12 @@
+E:\Program Files\projects\Modele\bin\Debug\Modele.dll
+E:\Program Files\projects\Modele\bin\Debug\Modele.pdb
+E:\Program Files\projects\Modele\obj\Debug\Modele.csproj.AssemblyReference.cache
+E:\Program Files\projects\Modele\obj\Debug\Modele.csproj.CoreCompileInputs.cache
+E:\Program Files\projects\Modele\obj\Debug\Modele.dll
+E:\Program Files\projects\Modele\obj\Debug\Modele.pdb
+E:\Program Files\projects\Magazin\Modele\bin\Debug\Modele.dll
+E:\Program Files\projects\Magazin\Modele\bin\Debug\Modele.pdb
+E:\Program Files\projects\Magazin\Modele\obj\Debug\Modele.csproj.AssemblyReference.cache
+E:\Program Files\projects\Magazin\Modele\obj\Debug\Modele.csproj.CoreCompileInputs.cache
+E:\Program Files\projects\Magazin\Modele\obj\Debug\Modele.dll
+E:\Program Files\projects\Magazin\Modele\obj\Debug\Modele.pdb
