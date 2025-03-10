@@ -1,0 +1,11 @@
+E:\Program Files\projects\NivelStocare\obj\Debug\NivelStocare.csproj.AssemblyReference.cache
+E:\Program Files\projects\NivelStocare\obj\Debug\NivelStocare.csproj.CoreCompileInputs.cache
+E:\Program Files\projects\Magazin\NivelStocare\obj\Debug\NivelStocare.csproj.AssemblyReference.cache
+E:\Program Files\projects\Magazin\NivelStocare\obj\Debug\NivelStocare.csproj.CoreCompileInputs.cache
+E:\Program Files\projects\Magazin\NivelStocare\bin\Debug\NivelStocare.dll
+E:\Program Files\projects\Magazin\NivelStocare\bin\Debug\NivelStocare.pdb
+E:\Program Files\projects\Magazin\NivelStocare\bin\Debug\Modele.dll
+E:\Program Files\projects\Magazin\NivelStocare\bin\Debug\Modele.pdb
+E:\Program Files\projects\Magazin\NivelStocare\obj\Debug\NivelSto.62BC3250.Up2Date
+E:\Program Files\projects\Magazin\NivelStocare\obj\Debug\NivelStocare.dll
+E:\Program Files\projects\Magazin\NivelStocare\obj\Debug\NivelStocare.pdb
