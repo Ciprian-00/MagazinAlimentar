@@ -1,28 +1,57 @@
 # MagazinAlimentar
-Aplicație de consolă în C# pentru gestionarea produselor unui magazin alimentar, dezvoltată ca proiect individual la materia PIU (Proiectarea Interfețelor Utilizator).
 
-Descriere
-Aplicația permite introducerea unui număr de produse (nume, preț, stoc), afișarea listei complete de produse și căutarea unui produs după nume. Proiectul este structurat pe mai multe straturi (layere), fiecare cu propriul proiect C# în cadrul soluției:
+Aplicație desktop în C# (Windows Forms) pentru gestionarea unui magazin alimentar, dezvoltată ca proiect individual la materia PIU (Proiectarea Interfețelor Utilizator).
 
-Modele — definește entitatea Produs (nume, preț, stoc) și logica de afișare a unui produs
-NivelStocare — definește entitatea Magazin, care gestionează colecția de produse: adăugare, afișare, căutare
-MagazinAlimentar (proiect principal) — punctul de intrare al aplicației, gestionează interacțiunea cu utilizatorul prin consolă
+## Descriere
 
-Funcționalități
-- Adăugarea unui număr variabil de produse, introduse interactiv de utilizator
-- Afișarea tuturor produselor din magazin
-- Căutarea unui produs după nume, cu comparare case-insensitive (folosind LINQ)
+Aplicația simulează un sistem de gestiune pentru un magazin alimentar, cu două roluri distincte de utilizator: **Client** și **Angajat**. Combină noțiuni de programare orientată pe obiecte cu interacțiunea vizuală specifică aplicațiilor Windows Forms.
 
-Tehnologii
+## Funcționalități
+
+### Modul Client
+- Creare cont (înregistrare cu nume de utilizator și parolă)
+- Autentificare
+- Vizualizare listă de produse disponibile
+- Selectare și cumpărare produse
+
+### Modul Angajat
+- Adăugare produs nou
+- Modificare produs existent
+- Ștergere produs
+- Afișare listă completă de produse
+- Căutare produs (case-insensitive)
+
+## Arhitectură
+
+Aplicația este structurată pe clase cu responsabilități clar separate:
+
+- **`Produs`** — clasa principală, conține atributele fiecărui produs: `IdProdus`, `Nume`, `Pret`, `Stoc`, `Grupa`, `Tip`, `Promotie`
+- **`GrupaProdus`** — enum pentru clasificarea produselor: Lactate, Panificație, Carne, Legume/Fructe, Băuturi
+- **`AdministrareMagazin_FisierText`** — clasa responsabilă cu persistența datelor (citire/scriere din fișier), expune metode precum `AddProdus`, `GetProduse`, `UpdateProdus`, `StergeProdusDupaId`
+- **Formulare individuale** pentru fiecare funcționalitate: `FormAdaugaProdus`, `FormModificaProdus`, `FormCautaProdus`, `FormProduse`, `FormAutentificareClient`, `FormCumparaProduse`
+
+## Detalii de implementare
+
+- Validare completă a datelor la adăugarea/modificarea unui produs
+- Utilizare de `TryParse` pentru prevenirea erorilor de conversie
+- Ștergere produs direct din formularul principal (`FormProduse`), fără formulare separate
+- Persistență a datelor printr-un fișier text, cu logică unitară de acces
+
+## Tehnologii
+
 - C#
-- .NET Framework
-- LINQ
+- Windows Forms (.NET Framework)
 
-Arhitectură
-Proiectul este organizat pe principiul separării responsabilităților (separation of concerns), cu straturi distincte pentru modelul de date și logica de business, fiecare fiind un proiect C# separat inclus în aceeași soluție (.sln).
+## Posibile dezvoltări ulterioare
 
-Rulare
-1. Deschide MagazinAlimentar.sln în Visual Studio
-2. Setează MagazinAlimentar ca proiect de pornire
+- Salvarea comenzilor plasate de clienți într-un fișier sau bază de date
+- Autentificare angajat cu permisiuni avansate
+- Sistem de stocuri automate, cu notificări la stoc scăzut
+- Trecerea de la stocare pe fișier text la o bază de date SQL
+
+## Rulare
+
+1. Deschide `MagazinAlimentar.sln` în Visual Studio
+2. Setează `MagazinAlimentar` ca proiect de pornire
 3. Rulează aplicația (F5)
-4. Urmează instrucțiunile din consolă pentru a introduce și căuta produse
+4. Din meniul principal, alege Client (înregistrare/autentificare/cumpărare) sau Angajat (gestionare produse)
