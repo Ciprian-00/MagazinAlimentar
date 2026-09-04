@@ -49,6 +49,9 @@ Aplicația este structurată pe clase cu responsabilități clar separate:
 - Sistem de stocuri automate, cu notificări la stoc scăzut
 - Trecerea de la stocare pe fișier text la o bază de date SQL
 
+## Documentatie 
+
+- Documentația completă a proiectului este [aici](https://github.com/Ciprian-00/MagazinAlimentar/blob/main/Documentatie_Proiect_Magazin_Alimentar.pdf).
 ## Rulare
 
 1. Deschide `MagazinAlimentar.sln` în Visual Studio
